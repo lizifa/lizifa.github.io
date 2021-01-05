@@ -1,12 +1,4 @@
 @charset "UTF-8";
-@font-face {
-	font-family: hermiticon;
-	src: url(fonts/hermiticon.eot?cez6o0);
-	src: url(fonts/hermiticon.eot?#iefixcez6o0) format('embedded-opentype'), url(fonts/hermiticon.ttf?cez6o0) format('truetype'), url(fonts/hermiticon.woff?cez6o0) format('woff'), url(fonts/hermiticon.svg?cez6o0#hermiticon) format('svg');
-	font-weight: 400;
-	font-style: normal
-}
-
 .hermit {
 	overflow: hidden;
 	background: #fff;
