@@ -1,4 +1,4 @@
-import{l as e}from"./index.5d606104.js";const t=`<h1>electron</h1>
+import{l as e}from"./index.eab18acf.js";const t=`<h1>electron</h1>
 <p>\u5F00\u53D1\u4E2D....</p>
 `,n=`<h1>\u73AF\u5883\u642D\u5EFA</h1>
 <p>\u9875\u9762\u5F00\u53D1\u4E2D ......</p>
