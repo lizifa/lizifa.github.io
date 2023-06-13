@@ -1,5 +1,5 @@
-import{c as n}from"./common.5866de18.js";import"./index.71a5d6b9.js";const e=`<p>\u5F00\u53D1\u4E2D....</p>
-`,t=`<h1>\u4F7F\u7528 node \u5F00\u53D1\u56FE\u7247\u538B\u7F29\u5DE5\u5177</h1>
+import{c as n}from"./common.c3ad7dd0.js";import"./index.21f75e8e.js";const o=`<p>\u5F00\u53D1\u4E2D....</p>
+`,e=`<h1>\u4F7F\u7528 node \u5F00\u53D1\u56FE\u7247\u538B\u7F29\u5DE5\u5177</h1>
 <h2>\u77E5\u8BC6\u50A8\u5907</h2>
 <ul>
 <li>\u4E86\u89E3 TinyPNG \u7684\u4F5C\u7528</li>
@@ -243,4 +243,129 @@ const err = msg =&gt; new EventEmitter().emit('error', msg);
 <pre><code>npm run tinypng imgDir
 </code></pre>
 <p>\u81F3\u6B64\uFF0C\u4E00\u4E2A\u7B80\u5355\u7684\u56FE\u7247\u538B\u7F29\u5DE5\u5177\u5B8C\u6210\u4E86</p>
-`,o="",d=n("intro","\u7B80\u4ECB","/notes/nodejs/intro",e),i=n("tinypng","\u56FE\u7247\u538B\u7F29","/notes/nodejs/tinypng",t),r=n("puppeteer","\u7F51\u9875\u622A\u56FE&PDF\u751F\u6210","/notes/nodejs/puppeteer",o),p=[i,r],c=n("intro","node-js","/notes/nodejs/intro",e,p);export{d as __default,c as __module,p as default,p as page,r as puppeteer,i as tinypng};
+`,t=`<h1>Puppeteer \u8C37\u6B4C\u65E0\u5934\u6D4F\u89C8\u5668\u4F7F\u7528</h1>
+<h2>\u7B80\u4ECB</h2>
+<p>Puppeteer \u662F\u4E00\u4E2A Node.js \u5E93\uFF0C\u63D0\u4F9B\u4E86\u4E00\u7EC4\u57FA\u4E8E Chrome DevTools \u534F\u8BAE\u7684\u9AD8\u7EA7 API\uFF0C\u53EF\u7528\u4E8E\u901A\u8FC7\u7F16\u7A0B\u65B9\u5F0F\u63A7\u5236 Chrome \u6D4F\u89C8\u5668\u6216 Chromium \u6D4F\u89C8\u5668\u7684\u64CD\u4F5C\u3002</p>
+<p>Puppeteer \u53EF\u4EE5\u505A\u4EC0\u4E48\uFF1F</p>
+<ol>
+<li>\u722C\u866B\uFF1A\u53EF\u4EE5\u4F7F\u7528 Puppeteer \u722C\u53D6\u7F51\u7AD9\uFF0C\u83B7\u53D6\u6570\u636E\uFF0C\u5E76\u89E3\u6790\u7ED3\u679C\u3002</li>
+<li>\u81EA\u52A8\u5316\u6D4B\u8BD5\uFF1A\u53EF\u4EE5\u4F7F\u7528 Puppeteer \u8FDB\u884C UI \u81EA\u52A8\u5316\u6D4B\u8BD5\uFF0C\u81EA\u52A8\u6267\u884C\u767B\u5F55\u3001\u4E0B\u5355\u7B49\u9875\u9762\u64CD\u4F5C\uFF0C\u5E76\u5BF9\u8FD9\u4E9B\u64CD\u4F5C\u8FDB\u884C\u6D4B\u8BD5\u3002</li>
+<li>\u6027\u80FD\u5206\u6790\uFF1A\u53EF\u4EE5\u4F7F\u7528 Puppeteer \u8BBF\u95EE\u9875\u9762\u5E76\u751F\u6210\u8DDF\u8E2A\u6570\u636E\uFF0C\u8FDB\u800C\u5206\u6790\u9875\u9762\u6027\u80FD\uFF0C\u5982\u52A0\u8F7D\u65F6\u95F4\u7B49\u6307\u6807\u3002</li>
+<li>\u622A\u56FE\u548C\u751F\u6210 PDF\uFF1A\u53EF\u4EE5\u4F7F\u7528 Puppeteer \u5BF9\u9875\u9762\u8FDB\u884C\u622A\u56FE\uFF0C\u751F\u6210 PDF \u7B49\u64CD\u4F5C\u3002\u3010\u8BE5\u529F\u80FD\u6BD4\u8F83\u597D\u7528\u3011</li>
+<li>\u6A21\u62DF\u7528\u6237\u884C\u4E3A\uFF1A\u53EF\u4EE5\u4F7F\u7528 Puppeteer \u6A21\u62DF\u9F20\u6807\u548C\u952E\u76D8\u64CD\u4F5C\uFF0C\u5B9E\u73B0\u81EA\u52A8\u5316\u3002
+\u603B\u4E4B\uFF0CPuppeteer \u53EF\u4EE5\u6A21\u62DF\u7528\u6237\u5728\u6D4F\u89C8\u5668\u4E2D\u7684\u6240\u6709\u884C\u4E3A\uFF0C\u5E76\u63D0\u4F9B\u4E86\u4E30\u5BCC\u7684 API\uFF0C\u65B9\u4FBF\u5F00\u53D1\u4EBA\u5458\u8FDB\u884C\u7F16\u7A0B\u5F0F\u64CD\u4F5C\u3002</li>
+</ol>
+<h2>Puppeteer \u5BF9\u6BD4 canvas \u7684\u4F18\u52BF\uFF1F</h2>
+<p>\u5728\u56FD\u5185\u8F6F\u4EF6\u5E94\u7528\u4E2D\uFF0C\u6D77\u62A5\u7B49\u5F62\u5F0F\u7684\u56FE\u7247\u5206\u4EAB\u662F\u6D41\u91CF\u88C2\u53D8\u7684\u91CD\u8981\u624B\u6BB5\u4E4B\u4E00\u3002\u5BF9\u4E8E\u524D\u7AEF\u800C\u8A00\uFF0C\u5229\u7528 Canvas \u7ED8\u5236\u5E76\u901A\u8FC7 HTMLCanvasElement.toDataURL()\u7B49 API \u6700\u7EC8\u83B7\u5F97\u56FE\u7247\u6570\u636E\u662F\u4E00\u79CD\u53EF\u9009\u65B9\u6CD5\u3002\u4F46\u662F\u8FD9\u79CD\u65B9\u6CD5\u5B58\u5728\u5F88\u591A\u4EE4\u4EBA\u4E0D\u80FD\u5BB9\u5FCD\u7684\u7F3A\u70B9\uFF0C\u6BD4\u5982\uFF1A</p>
+<ul>
+<li>\u7ED8\u5236\u5728\u5176\u4E2D\u7684\u56FE\u7247\u9700\u8981\u9075\u5FAA\u6D4F\u89C8\u5668\u540C\u6E90\u7B56\u7565\uFF0C\u5426\u5219\u751F\u6210\u56FE\u7247\u6570\u636E\u65F6\u5019\u4F1A\u5931\u8D25\u3002</li>
+<li>\u7ED8\u5236\u590D\u6742\u7684\u5927\u56FE\u65F6\uFF0C\u4F1A\u8017\u8D39\u8F83\u591A\u5BA2\u6237\u7AEF\u6027\u80FD\u3002</li>
+<li>\u5B9E\u73B0\u7B80\u5355\u7684\u5E03\u5C40\u6548\u679C\uFF0C\u9700\u8981\u7E41\u7410\u7684 API\uFF0C\u5E76\u4E14\u4E0D\u4E00\u80FD\u548C Web \u7AEF\u5C55\u793A\u6548\u679C\u4E00\u6837\u3002</li>
+</ul>
+<h3>demo</h3>
+<pre><code>1. mkdir project
+2. cd project
+3. npm init -y
+4. npm i koa puppeteer koa-router --save
+5. mkdir public
+6. mkdir src
+7. cd src
+8. echo  &gt; index.js
+</code></pre>
+<p>\u6B64\u65F6\u6587\u4EF6\u76EE\u5F55</p>
+<pre><code>project
+- public
+- src
+-- index.js
+</code></pre>
+<p>\u7F16\u8F91index.js\u6587\u4EF6</p>
+<pre><code>const Koa = require(&quot;koa&quot;);
+const app = new Koa();
+const port = 5000;
+const Router = require(&quot;koa-router&quot;);
+const puppeteer = require(&quot;puppeteer&quot;);
+const router = new Router();
+
+// \u622A\u53D6\u67D0\u4E2Adom\u9875\u9762
+async function demo1() {
+  // \u9875\u9762\u662F\u53EF\u4EE5\u6CE8\u5165\u6570\u636E
+  const browser = await puppeteer.launch();
+  const page = await browser.newPage();
+  // \u53BB\u4EAC\u4E1C\u7684\u5B98\u7F51\u622A\u53D6\u67D0\u4E2Adom\u8282\u70B9\u7684\u56FE
+  await page.goto(&quot;https://www.jd.com&quot;, {
+    waitUntil: [&quot;domcontentloaded&quot;, &quot;networkidle2&quot;, &quot;load&quot;],
+  });
+  const domSelector = &quot;J_promotional-top&quot;;
+  const dom = await page.$(\`#\${domSelector}\`);
+  const domInfos = await dom.boundingBox();
+  const options = {
+    clip: {
+      x: domInfos.x,
+      y: domInfos.y,
+      width: domInfos.width,
+      height: domInfos.height,
+    },
+    path: \`./public/example-\${Date.now()}-\${domSelector}.png\`,
+  };
+  await page.screenshot(options);
+  await browser.close();
+}
+
+// \u622A\u53D6\u6574\u4E2A\u9875\u9762
+async function demo2() {
+  // \u9875\u9762\u662F\u53EF\u4EE5\u6CE8\u5165\u6570\u636E
+  const browser = await puppeteer.launch();
+  const page = await browser.newPage();
+  await page.goto(&quot;https://www.jd.com&quot;, {
+    waitUntil: [&quot;domcontentloaded&quot;, &quot;networkidle2&quot;, &quot;load&quot;],
+  });
+  await page.screenshot({
+    path: \`./public/example-\${Date.now()}-fullpage.png\`,
+    fullPage: true,
+  });
+  await browser.close();
+}
+
+// \u9875\u9762\u8F6C\u6210pdf
+async function demo3() {
+  // \u9875\u9762\u662F\u53EF\u4EE5\u6CE8\u5165\u6570\u636E
+  const browser = await puppeteer.launch();
+  const page = await browser.newPage();
+  await page.goto(&quot;https://www.zhihu.com/signin?next=%2F&quot;, {
+    waitUntil: [&quot;domcontentloaded&quot;, &quot;networkidle2&quot;, &quot;load&quot;],
+  });
+
+  await page.pdf({ path: \`./public/example-\${Date.now()}.pdf\` });
+  await browser.close();
+}
+
+// \u8BBF\u95EE\u8FD9\u4E2A\u670D\u52A1\u5668\u5730\u5740\uFF0C\u53BB\u6267\u884C\u67D0\u4E2A\u64CD\u4F5C\uFF0C\u622A\u56FE\u751F\u6210pdf\u7B49
+router.get(&quot;/&quot;, async (ctx) =&gt; {
+  await demo3();
+  ctx.body = &quot;&lt;h1&gt;done&lt;/h1&gt;&quot;;
+});
+
+// \u6CE8\u518C\u8DEF\u7531\u4E2D\u95F4\u4EF6
+app.use(router.routes());
+app.use(router.allowedMethods({}));
+app.listen(port, onStartAfterCb);
+app.on(&quot;error&quot;, onError);
+
+// \u8BB0\u5F55\u65E5\u5FD7\u6216\u53D1\u9001\u544A\u8B66\u3002
+function onError(error, ctx) {
+  console.error(&quot;koa error:&quot;, error, ctx);
+  // \u6267\u884C\u4E00\u4E9B\u5904\u7406\u903B\u8F91
+}
+
+// \u5E94\u7528\u542F\u52A8\u540E\u505A\u7684\u4E00\u4E9B\u64CD\u4F5C
+function onStartAfterCb() {
+  console.log(\`app start at: http://0.0.0.0:\${port}\`);
+}
+
+</code></pre>
+<p>\u7136\u540E\u6211\u4EEC\u5C31\u53EF\u4EE5\u6D4B\u8BD5\u529F\u80FD\uFF0C\u6253\u5F00\u547D\u4EE4\u884Cwin+r \u8F93\u5165cmd,\u56E0\u4E3A\u6211\u4EEC\u5BF9\u5916\u629B\u51FA\u4E86\u4E00\u4E2A\u63A5\u53E3\uFF0C\u6B64\u65F6\u6211\u4EEC\u53EA\u9700\u8981\u53BB\u8C03\u7528\u8FD9\u4E2A\u63A5\u53E3\u4FBF\u53EF\u4EE5\u6267\u884C\u76F8\u5E94\u7684\u64CD\u4F5C</p>
+<p>\u5728\u547D\u4EE4\u884C\u4E2D\u8F93\u5165\u5982\u4E0B\u547D\u4EE4</p>
+<pre><code>curl -X GET \`yourIp:\${port}\`
+</code></pre>
+<p>\u4FBF\u53EF\u5728public\u6587\u4EF6\u5939\u770B\u5230\u76F8\u5E94\u7684\u6587\u4EF6\uFF0C\u81F3\u6B64\u4E00\u4E2A\u7B80\u5355\u7684demo\u5B8C\u6210\u4E86</p>
+`,s=n("intro","\u7B80\u4ECB","/notes/nodejs/intro",o),r=n("tinypng","\u56FE\u7247\u538B\u7F29","/notes/nodejs/tinypng",e),p=n("puppeteer","\u7F51\u9875\u622A\u56FE&PDF\u751F\u6210","/notes/nodejs/puppeteer",t),i=[r,p],c=n("intro","node-js","/notes/nodejs/intro",o,i);export{s as __default,c as __module,i as default,i as page,p as puppeteer,r as tinypng};
