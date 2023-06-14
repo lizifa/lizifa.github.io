@@ -1,4 +1,11 @@
-import{c as n}from"./common.c3ad7dd0.js";import"./index.21f75e8e.js";const o=`<p>\u5F00\u53D1\u4E2D....</p>
+import{c as n}from"./common.c51073e8.js";import"./index.ea8a8911.js";const o=`<h1>\u524D\u7AEF\u9700\u8981\u53BB\u4E86\u89E3\u7684nodejs\u77E5\u8BC6</h1>
+<h2>\u524D\u8A00</h2>
+<ul>
+<li>Node.js \u662F\u4E00\u4E2A\u5F00\u6E90\u7684\u3001\u8DE8\u5E73\u53F0\u7684 JavaScript \u8FD0\u884C\u73AF\u5883\uFF0C\u5B83\u53EF\u4EE5\u8BA9 JavaScript \u5728\u670D\u52A1\u5668\u7AEF\u8FD0\u884C\uFF0C\u4F7F\u5F97 JavaScript \u4E5F\u53EF\u4EE5\u7528\u4E8E\u6784\u5EFA\u7F51\u7EDC\u5E94\u7528\u7A0B\u5E8F\u548C\u670D\u52A1\u7AEF\u4EE3\u7801\u3002</li>
+<li>Node.js \u8FD0\u884C\u5728 Google V8 \u5F15\u64CE\u4E4B\u4E0A\uFF0C\u652F\u6301\u975E\u963B\u585E I/O \u548C\u4E8B\u4EF6\u9A71\u52A8\u6A21\u578B\uFF0C\u4F7F\u5F97\u5B83\u975E\u5E38\u9002\u5408\u7F16\u5199\u9AD8\u6027\u80FD\u3001\u53EF\u6269\u5C55\u7684\u7F51\u7EDC\u5E94\u7528\u7A0B\u5E8F\u3002</li>
+<li>Node.js \u4E5F\u62E5\u6709\u4E30\u5BCC\u7684\u7B2C\u4E09\u65B9\u6A21\u5757\u5E93\uFF0C\u53EF\u4F9B\u5F00\u53D1\u8005\u4F7F\u7528\uFF0C\u5E76\u4E14\u5176\u4F7F\u7528\u7B80\u5355\u7075\u6D3B\uFF0C\u6613\u4E8E\u5B66\u4E60\u548C\u5E94\u7528\u3002</li>
+<li>\u65E0\u8BBA\u662F\u6784\u5EFA Web \u5E94\u7528\u3001API \u670D\u52A1\uFF0C\u8FD8\u662F\u7F16\u5199\u5DE5\u5177\u3001\u811A\u672C\u548C\u670D\u52A1\u7AEF\u7A0B\u5E8F\uFF0CNode.js \u90FD\u662F\u4E00\u4E2A\u5F3A\u5927\u800C\u4F18\u79C0\u7684\u9009\u62E9\u3002</li>
+</ul>
 `,e=`<h1>\u4F7F\u7528 node \u5F00\u53D1\u56FE\u7247\u538B\u7F29\u5DE5\u5177</h1>
 <h2>\u77E5\u8BC6\u50A8\u5907</h2>
 <ul>
@@ -368,4 +375,4 @@ function onStartAfterCb() {
 <pre><code>curl -X GET \`yourIp:\${port}\`
 </code></pre>
 <p>\u4FBF\u53EF\u5728public\u6587\u4EF6\u5939\u770B\u5230\u76F8\u5E94\u7684\u6587\u4EF6\uFF0C\u81F3\u6B64\u4E00\u4E2A\u7B80\u5355\u7684demo\u5B8C\u6210\u4E86</p>
-`,s=n("intro","\u7B80\u4ECB","/notes/nodejs/intro",o),r=n("tinypng","\u56FE\u7247\u538B\u7F29","/notes/nodejs/tinypng",e),p=n("puppeteer","\u7F51\u9875\u622A\u56FE&PDF\u751F\u6210","/notes/nodejs/puppeteer",t),i=[r,p],c=n("intro","node-js","/notes/nodejs/intro",o,i);export{s as __default,c as __module,i as default,i as page,p as puppeteer,r as tinypng};
+`,s=n("intro","\u7B80\u4ECB","/notes/nodejs/intro",o),r=n("tinypng","\u56FE\u7247\u538B\u7F29","/notes/nodejs/tinypng",e),i=n("puppeteer","\u7F51\u9875\u622A\u56FE&PDF\u751F\u6210","/notes/nodejs/puppeteer",t),p=[r,i],c=n("intro","node-js","/notes/nodejs/intro",o,p);export{s as __default,c as __module,p as default,p as page,i as puppeteer,r as tinypng};
