@@ -1,4 +1,4 @@
-import{c as A}from"./common.86ee9138.js";import"./index.bdf0989a.js";const B=`<h1>Code Review \u65B9\u6CD5\u8BBA\u4E0E\u5B9E\u8DF5\u603B\u7ED3</h1>
+import{c as A}from"./common.e3382f4b.js";import"./index.94ec84fd.js";const B=`<h1>Code Review \u65B9\u6CD5\u8BBA\u4E0E\u5B9E\u8DF5\u603B\u7ED3</h1>
 <h2>\u4E3A\u4EC0\u4E48\u8981 CR\uFF1F</h2>
 <ul>
 <li>
@@ -61,7 +61,7 @@ import{c as A}from"./common.86ee9138.js";import"./index.bdf0989a.js";const B=`<h
 <p>\u5728\u4E3A\u53D8\u91CF\u3001\u7C7B\u540D\u3001\u65B9\u6CD5\u7B49\u547D\u540D\u65F6\uFF0C\u5F00\u53D1\u8005\u4F7F\u7528\u7684\u540D\u79F0\u662F\u5426\u6E05\u6670\u6613\u61C2\uFF1F</p>
 </li>
 </ul>
-<h2>\u5982\u4F55\u505A CR\uFF1F</h2>
+<h2>\u4F55\u65F6\u53D1\u8D77 CR\uFF1F</h2>
 <ul>
 <li>
 <p>\u53D1\u8D77\u65F6\u673A\uFF1A</p>
