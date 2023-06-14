@@ -1,4 +1,4 @@
-import{c as n}from"./common.c51073e8.js";import"./index.ea8a8911.js";const o=`<h1>\u524D\u7AEF\u9700\u8981\u53BB\u4E86\u89E3\u7684nodejs\u77E5\u8BC6</h1>
+import{c as n}from"./common.86ee9138.js";import"./index.bdf0989a.js";const e=`<h1>\u524D\u7AEF\u9700\u8981\u53BB\u4E86\u89E3\u7684nodejs\u77E5\u8BC6</h1>
 <h2>\u524D\u8A00</h2>
 <ul>
 <li>Node.js \u662F\u4E00\u4E2A\u5F00\u6E90\u7684\u3001\u8DE8\u5E73\u53F0\u7684 JavaScript \u8FD0\u884C\u73AF\u5883\uFF0C\u5B83\u53EF\u4EE5\u8BA9 JavaScript \u5728\u670D\u52A1\u5668\u7AEF\u8FD0\u884C\uFF0C\u4F7F\u5F97 JavaScript \u4E5F\u53EF\u4EE5\u7528\u4E8E\u6784\u5EFA\u7F51\u7EDC\u5E94\u7528\u7A0B\u5E8F\u548C\u670D\u52A1\u7AEF\u4EE3\u7801\u3002</li>
@@ -6,7 +6,7 @@ import{c as n}from"./common.c51073e8.js";import"./index.ea8a8911.js";const o=`<h
 <li>Node.js \u4E5F\u62E5\u6709\u4E30\u5BCC\u7684\u7B2C\u4E09\u65B9\u6A21\u5757\u5E93\uFF0C\u53EF\u4F9B\u5F00\u53D1\u8005\u4F7F\u7528\uFF0C\u5E76\u4E14\u5176\u4F7F\u7528\u7B80\u5355\u7075\u6D3B\uFF0C\u6613\u4E8E\u5B66\u4E60\u548C\u5E94\u7528\u3002</li>
 <li>\u65E0\u8BBA\u662F\u6784\u5EFA Web \u5E94\u7528\u3001API \u670D\u52A1\uFF0C\u8FD8\u662F\u7F16\u5199\u5DE5\u5177\u3001\u811A\u672C\u548C\u670D\u52A1\u7AEF\u7A0B\u5E8F\uFF0CNode.js \u90FD\u662F\u4E00\u4E2A\u5F3A\u5927\u800C\u4F18\u79C0\u7684\u9009\u62E9\u3002</li>
 </ul>
-`,e=`<h1>\u4F7F\u7528 node \u5F00\u53D1\u56FE\u7247\u538B\u7F29\u5DE5\u5177</h1>
+`,o=`<h1>\u4F7F\u7528 node \u5F00\u53D1\u56FE\u7247\u538B\u7F29\u5DE5\u5177</h1>
 <h2>\u77E5\u8BC6\u50A8\u5907</h2>
 <ul>
 <li>\u4E86\u89E3 TinyPNG \u7684\u4F5C\u7528</li>
@@ -375,4 +375,128 @@ function onStartAfterCb() {
 <pre><code>curl -X GET \`yourIp:\${port}\`
 </code></pre>
 <p>\u4FBF\u53EF\u5728public\u6587\u4EF6\u5939\u770B\u5230\u76F8\u5E94\u7684\u6587\u4EF6\uFF0C\u81F3\u6B64\u4E00\u4E2A\u7B80\u5355\u7684demo\u5B8C\u6210\u4E86</p>
-`,s=n("intro","\u7B80\u4ECB","/notes/nodejs/intro",o),r=n("tinypng","\u56FE\u7247\u538B\u7F29","/notes/nodejs/tinypng",e),i=n("puppeteer","\u7F51\u9875\u622A\u56FE&PDF\u751F\u6210","/notes/nodejs/puppeteer",t),p=[r,i],c=n("intro","node-js","/notes/nodejs/intro",o,p);export{s as __default,c as __module,p as default,p as page,i as puppeteer,r as tinypng};
+`,r=`<h1>node \u4E1A\u52A1\u4EE3\u7801\u5E73\u6ED1\u66F4\u65B0</h1>
+<h2>\u8D1F\u8F7D\u5747\u8861</h2>
+<p>\u5982\u679C\u8981\u66F4\u65B0 a \u8FDB\u7A0B\uFF0C\u4F46\u662F\u7528\u6237\u6B63\u5728\u4F7F\u7528 a \u8FDB\u7A0B\uFF0C\u5219\u9700\u8981\u5148\u5C06\u7528\u6237\u8BF7\u6C42\u4ECE a \u8FDB\u7A0B\u4E2D\u79FB\u9664\uFF0C\u786E\u4FDD\u7528\u6237\u4E0D\u4F1A\u53D7\u5230\u5F71\u54CD\u3002</p>
+<p>\u4E00\u79CD\u65B9\u6CD5\u662F\uFF0C\u5728\u66F4\u65B0 a \u8FDB\u7A0B\u4E4B\u524D\uFF0C\u5C06 a \u8FDB\u7A0B\u4ECE Nginx \u8D1F\u8F7D\u5747\u8861\u7684\u540E\u7AEF\u670D\u52A1\u5668\u5217\u8868\u4E2D\u79FB\u9664\uFF0C\u5728\u66F4\u65B0\u5B8C\u6210\u540E\u518D\u5C06\u5176\u6DFB\u52A0\u56DE\u53BB\u3002</p>
+<p>\u5177\u4F53\u7684\u914D\u7F6E\u65B9\u6CD5\u53D6\u51B3\u4E8E\u4F60\u4F7F\u7528\u7684 Nginx \u7248\u672C\u548C\u8D1F\u8F7D\u5747\u8861\u65B9\u5F0F\u3002\u4EE5\u4E0B\u662F\u4E00\u4E2A\u53EF\u80FD\u7684 Nginx \u914D\u7F6E\u793A\u4F8B\uFF0C\u5047\u8BBE\u4F60\u4F7F\u7528\u7684\u662F upstream \u6A21\u5757\u5B9E\u73B0\u8D1F\u8F7D\u5747\u8861\uFF1A</p>
+<pre><code>http {
+    upstream app_servers {
+        server 127.0.0.1:3000;  # a\u8FDB\u7A0B
+        server 127.0.0.1:3001;  # b\u8FDB\u7A0B
+        server 127.0.0.1:3002;  # c\u8FDB\u7A0B
+    }
+
+    server {
+        listen 80;
+        server_name example.com;
+
+        location / {
+            proxy_pass http://app_servers;
+        }
+    }
+}
+</code></pre>
+<p>\u5728\u8FD9\u4E2A\u4F8B\u5B50\u4E2D\uFF0CNginx \u5C06\u7528\u6237\u8BF7\u6C42\u901A\u8FC7 HTTP \u4EE3\u7406\u8F6C\u53D1\u5230 app_servers \u4E0A\u7684\u67D0\u4E2A\u670D\u52A1\u5668\u8FDB\u7A0B\u3002\u5982\u679C\u8981\u66F4\u65B0 a \u8FDB\u7A0B\uFF0C\u53EF\u4EE5\u5C06\u5176\u4ECE upstream \u5217\u8868\u4E2D\u79FB\u9664\uFF0C\u7B49\u66F4\u65B0\u5B8C\u6210\u540E\u518D\u6DFB\u52A0\u56DE\u53BB\u3002\u4F8B\u5982\uFF1A</p>
+<pre><code>http {
+    upstream app_servers {
+        server 127.0.0.1:3001;  # b\u8FDB\u7A0B
+        server 127.0.0.1:3002;  # c\u8FDB\u7A0B
+    }
+
+    server {
+        listen 80;
+        server_name example.com;
+
+        location / {
+            proxy_pass http://app_servers;
+        }
+    }
+}
+</code></pre>
+<p>\u8FD9\u6837\uFF0C\u5728\u66F4\u65B0 a \u8FDB\u7A0B\u65F6\uFF0C\u7528\u6237\u7684\u8BF7\u6C42\u5C31\u4E0D\u4F1A\u88AB\u8F6C\u53D1\u5230 a \u8FDB\u7A0B\u4E0A\uFF0C\u800C\u662F\u88AB\u8F6C\u53D1\u5230\u5176\u4ED6\u6B63\u5E38\u8FD0\u884C\u7684\u8FDB\u7A0B\u4E0A\uFF0C\u786E\u4FDD\u7528\u6237\u4E0D\u4F1A\u53D7\u5230\u5F71\u54CD\u3002</p>
+<p>\u66F4\u65B0\u5B8C\u6210\u540E\uFF0C\u8BB0\u5F97\u5C06 a \u8FDB\u7A0B\u91CD\u65B0\u6DFB\u52A0\u5230 upstream \u5217\u8868\u4E2D\uFF0C\u4F8B\u5982\uFF1A</p>
+<pre><code>http {
+    upstream app_servers {
+        server 127.0.0.1:3000;  # a\u8FDB\u7A0B
+        server 127.0.0.1:3001;  # b\u8FDB\u7A0B
+        server 127.0.0.1:3002;  # c\u8FDB\u7A0B
+    }
+
+    server {
+        listen 80;
+        server_name example.com;
+
+        location / {
+            proxy_pass http://app_servers;
+        }
+    }
+}
+</code></pre>
+<p>\u8FD9\u6837\uFF0CNginx \u5C31\u4F1A\u5C06\u7528\u6237\u8BF7\u6C42\u5E73\u5747\u5206\u914D\u5230\u6240\u6709\u6B63\u5E38\u8FD0\u884C\u7684\u8FDB\u7A0B\u4E2D\uFF0C\u786E\u4FDD\u670D\u52A1\u7684\u7A33\u5B9A\u6027\u548C\u53EF\u7528\u6027\u3002</p>
+<h2>\u5E73\u6ED1\u91CD\u542F</h2>
+<ul>
+<li>\u90A3\u4E48 a \u8FDB\u7A0B\u5982\u4F55\u544A\u77E5\u81EA\u5DF1\u8981\u91CD\u542F\u5462\uFF1F</li>
+</ul>
+<p>\u9996\u5148\uFF0C\u5728\u7528\u6237\u53D1\u9001\u8BF7\u6C42\u4E4B\u524D\uFF0Ca \u8FDB\u7A0B\u9700\u8981\u5411 Nginx \u6CE8\u518C\u81EA\u5DF1\u7684\u5730\u5740\u548C\u7AEF\u53E3\uFF0C\u4EE5\u4FBF Nginx \u80FD\u591F\u5C06\u8BF7\u6C42\u8F6C\u53D1\u5230\u81EA\u5DF1\u3002\u8FD9\u53EF\u4EE5\u901A\u8FC7\u5411\u4E00\u4E2A\u5171\u4EAB\u7684\u914D\u7F6E\u6587\u4EF6\u4E2D\u5199\u5165\u81EA\u5DF1\u7684\u5730\u5740\u548C\u7AEF\u53E3\u6765\u5B9E\u73B0\u3002\u4F8B\u5982\uFF0C\u5728 Node.js \u4E2D\u53EF\u4EE5\u4F7F\u7528\u5171\u4EAB\u5185\u5B58\u6765\u5B9E\u73B0\uFF1A</p>
+<pre><code>const cluster = require('cluster');
+const fs = require('fs');
+
+if (cluster.isMaster) {
+ // \u521B\u5EFA\u5171\u4EAB\u5185\u5B58
+ const fd = fs.openSync('worker-info.txt', 'w+');
+
+ for (let i = 0; i &lt; numCPUs; i++) {
+   const worker = cluster.fork();
+
+   // \u76D1\u542Cworker\u4E0A\u62A5\u81EA\u5DF1\u7684\u5730\u5740\u548C\u7AEF\u53E3
+   worker.on('message', (message) =&gt; {
+     if (message.type === 'REGISTER') {
+       // \u5199\u5165\u5171\u4EAB\u6587\u4EF6\u4E2D
+       fs.write(fd, \`\${message.pid} \${message.address} \${message.port}\\n\`);
+     }
+   });
+ }
+} else {
+ const express = require('express');
+ const app = express();
+
+ // \u542F\u52A8HTTP\u670D\u52A1\u5668\u5E76\u4E0A\u62A5\u81EA\u5DF1\u7684\u5730\u5740\u548C\u7AEF\u53E3
+ const server = app.listen(0, () =&gt; {
+   const message = {
+     type: 'REGISTER',
+     pid: process.pid,
+     address: server.address().address,
+     port: server.address().port
+   };
+   process.send(message);
+ });
+
+ // \u5904\u7406HTTP\u8BF7\u6C42\u903B\u8F91
+ app.get('/', (req, res) =&gt; {
+   // TODO: \u5904\u7406\u8BF7\u6C42
+ });
+}
+</code></pre>
+<p>\u5728\u4E0A\u9762\u7684\u4F8B\u5B50\u4E2D\uFF0C\u6BCF\u4E2A\u8FDB\u7A0B\u90FD\u4F1A\u4ECE\u5171\u4EAB\u6587\u4EF6\u4E2D\u8BFB\u53D6\u5176\u4ED6\u8FDB\u7A0B\u7684\u5730\u5740\u548C\u7AEF\u53E3\uFF0C\u4EE5\u4FBF\u8FDB\u884CNginx\u8D1F\u8F7D\u5747\u8861\u3002</p>
+<p>\u63A5\u4E0B\u6765\uFF0C\u5728\u66F4\u65B0a\u8FDB\u7A0B\u4E4B\u524D\uFF0C\u53EF\u4EE5\u5C06a\u8FDB\u7A0B\u4ECENginx\u8D1F\u8F7D\u5747\u8861\u7684\u540E\u7AEF\u670D\u52A1\u5668\u5217\u8868\u4E2D\u79FB\u9664\uFF0C\u5E76\u53D1\u9001\u4E00\u4E2A\u4FE1\u53F7\u8BA9a\u8FDB\u7A0B\u91CD\u542F\u3002\u4F8B\u5982\uFF0C\u5728Node.js\u4E2D\u53EF\u4EE5\u4F7F\u7528process.kill\u65B9\u6CD5\u53D1\u9001\u4FE1\u53F7\uFF1A</p>
+<pre><code>const fs = require('fs');
+
+// \u8BFB\u53D6\u5171\u4EAB\u6587\u4EF6\u4E2D\u7684\u5730\u5740\u548C\u7AEF\u53E3
+const workers = {};
+fs.readFileSync('worker-info.txt', 'utf8').split('\\n').forEach((line) =&gt; {
+  const [pid, address, port] = line.trim().split(' ');
+  if (pid &amp;&amp; address &amp;&amp; port) {
+    workers[pid] = { address, port };
+  }
+});
+
+// \u4ECENginx\u8D1F\u8F7D\u5747\u8861\u5217\u8868\u4E2D\u79FB\u9664\u5F53\u524D\u8FDB\u7A0B
+delete workers[process.pid];
+fs.writeFileSync('worker-info.txt', Object.values(workers).map((w) =&gt; \`\${w.address} \${w.port}\`).join('\\n'));
+
+// \u53D1\u9001\u91CD\u542F\u4FE1\u53F7
+process.kill(process.pid, 'SIGTERM');
+</code></pre>
+<p>\u5728\u8FD9\u4E2A\u4F8B\u5B50\u4E2D\uFF0C\u9996\u5148\u8BFB\u53D6\u5171\u4EAB\u6587\u4EF6\u4E2D\u7684\u6240\u6709\u8FDB\u7A0B\u5730\u5740\u548C\u7AEF\u53E3\uFF0C\u7136\u540E\u4ECE\u4E2D\u79FB\u9664\u5F53\u524D\u8FDB\u7A0B\u7684\u5730\u5740\u548C\u7AEF</p>
+`,c=n("intro","\u7B80\u4ECB","/notes/nodejs/intro",e),p=n("tinypng","\u56FE\u7247\u538B\u7F29","/notes/nodejs/tinypng",o),s=n("nodeUpdate","\u5347\u7EA7node\u4E1A\u52A1\u4EE3\u7801","/notes/nodejs/nodeUpdate",r),i=n("puppeteer","\u7F51\u9875\u622A\u56FE&PDF\u751F\u6210","/notes/nodejs/puppeteer",t),a=[p,i,s],l=n("intro","node-js","/notes/nodejs/intro",e,a);export{c as __default,l as __module,a as default,s as nodeUpdate,a as page,i as puppeteer,p as tinypng};
