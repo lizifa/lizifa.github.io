@@ -1,0 +1,1 @@
+import{notFond as n}from"./index.9a65c35c.js";import{_ as e,r,o as c,c as a}from"./index.792d7165.js";import"./common.fef9c0aa.js";const s={setup(){return{markdownContent:n.content}}};function m(p,_,d,o,l,i){const t=r("Article");return c(),a(t,{htmlCode:o.markdownContent},null,8,["htmlCode"])}var k=e(s,[["render",m]]);export{k as default};

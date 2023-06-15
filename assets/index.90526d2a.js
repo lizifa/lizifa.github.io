@@ -1,4 +1,4 @@
-import{c as A}from"./common.e3382f4b.js";import"./index.94ec84fd.js";const B=`<h1>Code Review \u65B9\u6CD5\u8BBA\u4E0E\u5B9E\u8DF5\u603B\u7ED3</h1>
+import{c as A}from"./common.fef9c0aa.js";import"./index.792d7165.js";const B=`<h1>Code Review \u65B9\u6CD5\u8BBA\u4E0E\u5B9E\u8DF5\u603B\u7ED3</h1>
 <h2>\u4E3A\u4EC0\u4E48\u8981 CR\uFF1F</h2>
 <ul>
 <li>

@@ -1,4 +1,4 @@
-import{E as n}from"./index.94ec84fd.js";const l=`<h1>\u524D\u7AEF\u6027\u80FD\u4F18\u5316\u7BC7</h1>
+import{E as n}from"./index.792d7165.js";const l=`<h1>\u524D\u7AEF\u6027\u80FD\u4F18\u5316\u7BC7</h1>
 <h2>\u6027\u80FD\u4F18\u5316\u65B9\u6848</h2>
 <ul>
 <li>CDN</li>
