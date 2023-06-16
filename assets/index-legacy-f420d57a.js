@@ -1,0 +1,1 @@
+System.register(["./common-legacy-eb6b876b.js","./index-legacy-7cef3c1a.js"],(function(e,t){"use strict";var n;return{setters:[e=>{n=e.c},null],execute:function(){const t="<p>开发中....</p>\n",s=e("__default",n("intro","简介","/notes/vuejs/intro",t)),u=[];e({page:u,default:u}),e("__module",n("intro","Vue",s.path,t,u))}}}));

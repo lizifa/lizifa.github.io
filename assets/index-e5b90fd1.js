@@ -1,4 +1,4 @@
-import{c as n}from"./common-7eba377c.js";import"./index-04112c4d.js";const e=`<h1>前端需要去了解的 nodejs 知识</h1>
+import{c as n}from"./common-a54cd1af.js";import"./index-63bc61f7.js";const e=`<h1>前端需要去了解的 nodejs 知识</h1>
 <h2>node 是什么？</h2>
 <ul>
 <li>Node.js 是一个基于&quot;Chrome V8 引擎&quot;的 JavaScript&quot;运行环境&quot;。</li>
