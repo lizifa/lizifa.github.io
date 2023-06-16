@@ -1,0 +1,1 @@
+System.register(["./common-legacy-ebf64166.js","./index-legacy-e4369d5c.js"],(function(e,t){"use strict";var n;return{setters:[e=>{n=e.c},null],execute:function(){const t="<p>开发中....</p>\n",c=e("__default",n("intro","简介","/notes/webpack/intro",t)),o=[];e({page:o,default:o}),e("__module",n("intro","Webpack",c.path,t,o))}}}));
