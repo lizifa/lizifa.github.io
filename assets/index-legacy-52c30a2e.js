@@ -1,0 +1,1 @@
+System.register(["./common-legacy-c76da15f.js","./index-legacy-2f5c4832.js"],(function(e,t){"use strict";var n;return{setters:[e=>{n=e.c},null],execute:function(){const t="<h1>个人对webpack的一些理解</h1>\n",c=e("__default",n("intro","简介","/notes/webpack/intro",t)),a=[];e({page:a,default:a}),e("__module",n("intro","Webpack",c.path,t,a))}}}));
