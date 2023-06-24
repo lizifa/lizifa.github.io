@@ -1,1 +1,0 @@
-import{notFond as n}from"./index-315af0a8.js";import{_ as e,r,o as c,c as s}from"./index-12fb60fd.js";import"./common-40d4c297.js";const a={setup(){return{markdownContent:n.content}}};function m(p,_,d,o,l,i){const t=r("Article");return c(),s(t,{htmlCode:o.markdownContent},null,8,["htmlCode"])}const k=e(a,[["render",m]]);export{k as default};
