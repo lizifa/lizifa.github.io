@@ -1,4 +1,4 @@
-import{E as n}from"./index-fe96a177.js";const l=`<h1>前端性能优化篇</h1>
+import{E as n}from"./index-2d2e2c21.js";const l=`<h1>前端性能优化篇</h1>
 <h2>性能优化方案</h2>
 <ul>
 <li>CDN</li>

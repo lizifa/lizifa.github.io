@@ -1,4 +1,4 @@
-import{c as n}from"./common-60de1519.js";import"./index-fe96a177.js";const l=`<h1>个人对 Vue 的一些理解</h1>
+import{c as n}from"./common-bc1132ac.js";import"./index-2d2e2c21.js";const l=`<h1>个人对 Vue 的一些理解</h1>
 <h2>vue 是什么？</h2>
 <p>Vue.js是一个用于创建用户界面的开源 JavaScript 框架，也是一个创建单页应用的 Web 应用框架。2016 年一项针对 JavaScript 的调查表明，Vue 有着 89%的开发者满意度。</p>
 <p>在 GitHub 上，该项目平均每天能收获 95 颗星，为 Github 有史以来星标数第 3 多的项目同时也是一款流行的 JavaScript 前端框架，旨在更好地组织与简化 Web 开发。</p>
@@ -43,4 +43,4 @@ import{c as n}from"./common-60de1519.js";import"./index-fe96a177.js";const l=`<h
 </ul>
 </li>
 </ul>
-`,i=n("intro","简介","/notes/vuejs/intro",l),e=[],t=n("intro","Vue",i.path,l,e);export{i as __default,t as __module,e as default,e as page};
+`,i=n("intro","简介","/notes/vuejs/intro",l),e=[],t=n("intro","vue",i.path,l,e);export{i as __default,t as __module,e as default,e as page};
