@@ -1,4 +1,4 @@
-import{c as A}from"./common-4fa76181.js";import"./index-457867bd.js";const B=`<h1>Code Review 方法论与实践总结</h1>
+import{c as A}from"./common-60de1519.js";import"./index-fe96a177.js";const B=`<h1>Code Review 方法论与实践总结</h1>
 <h2>为什么要 CR？</h2>
 <ul>
 <li>

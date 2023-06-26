@@ -1,1 +1,0 @@
-import{E as c}from"./index-457867bd.js";function o(r,e){return r.find(t=>t.articleId===e.params.articleId)}function s(r,e,t,i,a){return{articleId:r,content:i,path:t,title:e,routeType:c.inside,children:a}}export{s as c,o as r};
