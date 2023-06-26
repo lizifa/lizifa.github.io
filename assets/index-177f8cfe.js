@@ -1,4 +1,4 @@
-import{c as t}from"./common-ef1b640b.js";import"./index-ec830cba.js";const n=`<div style="position:fixed;left:55%;transform:translate(-50%, -50%);text-align:center;top:50%">
+import{c as t}from"./common-828466d6.js";import"./index-9179c805.js";const n=`<div style="position:fixed;left:55%;transform:translate(-50%, -50%);text-align:center;top:50%">
 <img src="/assets/deadlink-doc.png" style="display: block; width: 300px;">
 <span>页面找不到了 (*>﹏<*)</span>
 </div>
