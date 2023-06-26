@@ -1,4 +1,4 @@
-import{c as e}from"./common-828466d6.js";import"./index-9179c805.js";const n=`<h1>前端开发常用工具函数</h1>
+import{c as e}from"./common-41e7c2f7.js";import"./index-24b031f4.js";const n=`<h1>前端开发常用工具函数</h1>
 <h2>debounce: 函数防抖</h2>
 <pre><code>function debounce(fn, delay) {
   delay = delay || 1000;

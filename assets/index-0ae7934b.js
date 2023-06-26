@@ -1,4 +1,4 @@
-import{_ as u,r as a,o as i,c as d,w as r,a as s,t,b as n,d as l,e as m,F as h}from"./index-9179c805.js";const F={hunterFor:"高级前端开发工程师",age:30,sex:"男",hometown:"广西来宾",workingYears:"6年",phone:"1599997****",email:"5500****@qq.com",avatar:"https://www.qmjianli.com/images/edit/man.png",education:{educationType:"大专",startTime:"2013-09",endTime:"2016-07",scholl:"南宁职业技术学院",specialty:"计算机应用技术",score:"GPA 3.66/4 （专业前5%）",major:`
+import{_ as u,r as a,o as i,c as d,w as r,a as s,t,b as n,d as l,e as m,F as h}from"./index-24b031f4.js";const F={hunterFor:"高级前端开发工程师",age:30,sex:"男",hometown:"广西来宾",workingYears:"6年",phone:"1599997****",email:"5500****@qq.com",avatar:"https://www.qmjianli.com/images/edit/man.png",education:{educationType:"大专",startTime:"2013-09",endTime:"2016-07",scholl:"南宁职业技术学院",specialty:"计算机应用技术",score:"GPA 3.66/4 （专业前5%）",major:`
       图形设计，程序开发，平面设计等
     `},workExperience:[{startTime:"2013-09",endTime:"2016-07",companyName:"吊炸天科技有限公司",profession:"前端开发工程师",workContent:`
         拥负责本部的行政人事管理和日常事务，协助总监搞好各部门之间的综合协调，落实公司规章制度，沟通内外联系，保证上情下达和下情上报，负责对会议文件决定的事项进行催办、查办和落实，负责全公司组织系统研讨和修订。编制公司人事管理制度，规避各项人事风险。
