@@ -1,0 +1,1 @@
+var n=(r=>(r.link="link",r.inside="inside",r))(n||{});function c(r,e){return r.find(i=>i.articleId===e.params.articleId)}function s(r,e,i,t,a){return{articleId:r,content:t,path:i,title:e,routeType:n.inside,children:a}}export{n as E,s as c,c as r};

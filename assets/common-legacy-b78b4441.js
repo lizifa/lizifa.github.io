@@ -1,0 +1,1 @@
+System.register([],(function(e,t){"use strict";return{execute:function(){e({c:function(e,i,n,r,c){return{articleId:e,content:r,path:n,title:i,routeType:t.inside,children:c}},r:function(e,t){return e.find((e=>e.articleId===t.params.articleId))}});var t=e("E",(e=>(e.link="link",e.inside="inside",e))(t||{}))}}}));
